@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/creme"
+    android:paddingBottom="85dp"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/creme"
+        android:paddingHorizontal="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="36dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvTarget"
+            android:layout_width="330dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="90dp"
+            app:cardBackgroundColor="#7FA1C3"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/TargetCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="TARGET CALORIES"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/CaloriesLeftNumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                tools:text="1200"
+                android:text="0"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/CaloriesLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="80dp"
+                android:text="Calories Left"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/CaloriesEatenNumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:text="0"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/CaloriesEaten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="130dp"
+                android:text="Calories Eaten"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="25dp"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/white_circle" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="48dp"
+                app:srcCompat="@drawable/white_circle" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/ivLogoMain"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSarapan"
+            android:layout_width="330dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            app:cardCornerRadius="12sp"
+            app:cardElevation="7dp"
+            android:backgroundTint="@color/white"
+            app:cardMaxElevation="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvTarget">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSarapan"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/button_radius"
+                android:text="Tambah"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/imageViewSarapan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/sarapan" />
+                <TextView
+                    android:id="@+id/JudulSarapan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sarapan"
+                    android:layout_marginStart="6dp"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/TargetSarapan"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    android:text="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewSlash"
+                    android:layout_width="wrap_content"
+                    android:paddingHorizontal="3dp"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textColor="#A8A8A8"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TargetFixSarapan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#A8A8A8"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/InfoMakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="63dp"
+                android:text="Anda belum menambahkan makanan"
+                android:textSize="10sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvLunch"
+            android:layout_width="330dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:padding="10dp"
+            app:cardCornerRadius="12sp"
+            app:cardElevation="7dp"
+            app:cardMaxElevation="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvSarapan">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonLunch"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/button_radius"
+                android:text="Tambah"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/imageViewLunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/lunch" />
+
+                <TextView
+                    android:id="@+id/JudulLunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Siang"
+                    android:layout_marginStart="6dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/TargetLunch"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    android:text="0.0" />
+
+                <TextView
+                    android:id="@+id/slashLunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:paddingHorizontal="3dp"
+                    android:textColor="#A8A8A8"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TargetFixLunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#A8A8A8"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/InfoMakanLunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="63dp"
+                android:text="Anda belum menambahkan makanan"
+                android:textSize="10sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvDinner"
+            android:layout_width="330dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            app:cardCornerRadius="12sp"
+            android:backgroundTint="@color/white"
+            app:cardElevation="7dp"
+            app:cardMaxElevation="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvLunch">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDinner"
+                android:layout_width="298dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/button_radius"
+                android:text="Tambah"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/imageViewDinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/dinner" />
+                <TextView
+                    android:id="@+id/JudulDinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Malam"
+                    android:layout_marginStart="6dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/TargetDinner"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    android:text="0.0" />
+
+                <TextView
+                    android:id="@+id/slashDinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:paddingVertical="3dp"
+                    android:textColor="#A8A8A8"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TargetFixDinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#A8A8A8"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/InfoMakanDinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="63dp"
+                android:text="Anda belum menambahkan makanan"
+                android:textSize="10sp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvHiMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginBottom="5dp"
+            android:text="Halo,"
+            app:layout_constraintBottom_toTopOf="@+id/cvTarget"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvUserMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            tools:text="User"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cvTarget"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintStart_toEndOf="@+id/tvHiMain" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

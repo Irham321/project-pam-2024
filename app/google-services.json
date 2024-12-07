@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "350742706448",
+    "firebase_url": "https://calcount-apps-default-rtdb.firebaseio.com",
+    "project_id": "calcount-apps",
+    "storage_bucket": "calcount-apps.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350742706448:android:55956f7ca25d8f95830d95",
+        "android_client_info": {
+          "package_name": "ibm.mobile.appscal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhqX3GBbErbC8GDDMs4EAmoSnrf-sBOHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
